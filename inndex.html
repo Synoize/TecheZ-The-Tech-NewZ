@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"
+        integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>TecheZ | The Tech NewZ</title>
+</head>
+<style>
+    * {
+        scrollbar-width: none;
+        scroll-behavior: smooth;
+    }
+
+    header {
+        margin-top: -70px;
+        height: 70px;
+        width: 100%;
+        padding: 20px;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        gap: 20px;
+        position: fixed;
+    }
+
+    main {
+        margin-top: 70px;
+        width: 100%;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: start;
+        overflow-y: scroll;
+        background-color: rgb(255, 170, 0);
+    }
+
+    main ul li {
+        height: auto;
+        border: 1px solid #dedede;
+        border-radius: 10px;
+        padding: 15px;
+        background-color: rgb(248, 247, 255);
+    }
+
+    main ul li h2 {
+        font-weight: 600;
+        font-size: 1.2rem;
+        color: gray;
+    }
+
+    main ul li:active {
+        transform: scale(0.99);
+    }
+
+    main ul li div p {
+        color: #6f6f6f;
+    }
+
+    main ul li div p a {
+        color: rgb(0, 110, 255);
+    }
+
+    footer {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        background-color: slateblue;
+    }
+
+    .footer-content {
+        padding: 20px;
+        justify-content: space-around;
+        align-items: center;
+
+    }
+
+    .footer-content div {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .rights {
+        width: 100%;
+        display: flex;
+        padding: 10px;
+        justify-content: center;
+        background-color: white;
+        color: gray;
+    }
+</style>
+
+<body>
+    <header class="bg-slate-100">
+        <p class="text-blue-600 font-semibold text-xl sm:text-2xl">TecheZ</p>
+        <input type="search" placeholder="search here..." class="w-full sm:w-2/6 outline-none p-2">
+    </header>
+    <main>
+        <ul id="news-list" class="sm:w-4/6 sm:p-6 p-4 flex flex-col gap-6"></ul>
+    </main>
+
+    <footer class="bg-slate-100">
+
+        <div class="footer-content flex flex-col sm:flex-row gap-8 sm:gap-0">
+
+            <div class="w-full sm:w-1/4">
+                <a href="index.html" class="text-blue-600 font-semibold text-xl sm:text-2xl ">TecheZ</a>
+                <p class="text-xl text-gray-500">The Tech NewZ</p>
+            </div>
+
+            <div class="w-full sm:w-1/4">
+                <p class="text-blue-600 font-semibold text-xl sm:text-2xl ">About</p>
+                <p class="text-sm text-gray-500 text-center">Welcome to Techez. It's have more Tech Media NewZ for you.
+                </p>
+            </div>
+
+            <div class="w-full sm:w-1/4">
+                <p class="text-blue-600 font-semibold text-xl sm:text-2xl ">Follow Us</p>
+                <span class="flex gap-5 p-5">
+                    <i onclick="linkedin()" class="fa-brands fa-linkedin fa-xl cursor-pointer" style="color: #005cdd;"></i>
+
+                    <i onclick="github()" class="fa-brands fa-github fa-xl cursor-pointer" style="color: #151515;"></i>
+
+                    <i onclick="twitter()" class="fa-brands fa-x-twitter fa-xl cursor-pointer" style="color: #151515;"></i>
+
+                    <i onclick="instagram()" class="fa-brands fa-instagram fa-xl cursor-pointer" style="color: rgb(238, 0, 198);"></i>
+
+                    <i onclick="youtube()" class="fa-brands fa-youtube fa-xl cursor-pointer" style="color: red;"></i>
+
+                </span>
+                
+            </div>
+
+        </div>
+
+        <div class="rights text-xs Sm:text-xl">
+            <p>All rights are reserved - 2024&copy | <a onclick="instagram()"
+                    class="hover:text-blue-800 cursor-pointer">Synoize</a>
+            </p>
+        </div>
+
+    </footer>
+
+    <script src="app.js"></script>
+</body>
+
+</html>
